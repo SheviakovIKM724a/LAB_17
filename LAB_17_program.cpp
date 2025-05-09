@@ -81,7 +81,7 @@ int main() {
     }
 
     // Приклад з помилкою:
-    Motherboard broken("Intel Core i5", 1.0, 6144, 180.0, 16);  // частота -1
+    Motherboard broken("Intel Core i5", -1.0, 6144, 180.0, 16);  // частота -1
     if (broken.isValidMB()) {
         broken.printInfo();
     }
